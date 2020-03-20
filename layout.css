@@ -1,0 +1,65 @@
+.wrappper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: 
+    'header     header  header  header  header'
+    'nav        main    main    main    aside'
+    'nav        footer  footer  footer  footer'
+}
+
+/* This is method 1 of laying out the rows and columns */
+
+/* 
+.header{
+    background-color: blue;
+    grid-column: 1/-1;
+}
+
+
+.footer{
+    background-color: green;
+    grid-column: 1/-1;
+}
+
+.main{
+    background-color:chocolate;
+    grid-column: 2/5;
+}
+
+.nav{
+    background-color:yellow;
+    grid-column: 1/1;
+}
+
+.aside{
+    background-color:purple;
+} */
+
+/* This is method 2 of doing above using grid areas */
+
+.header{
+    background-color: blue;
+    grid-area: header
+}
+
+
+.footer{
+    background-color: green;
+    grid-area: footer
+}
+
+.main{
+    background-color:chocolate;
+    grid-area: main
+}
+
+.nav{
+    background-color:yellow;
+    grid-area: nav
+}
+
+.aside{
+    background-color:purple;
+    grid-area: aside
+}
